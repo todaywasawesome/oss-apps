@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
   destination:
     name: oss-staging
-    namespace: default
+    namespace: colors
   syncPolicy:
     automated:
       prune: true
