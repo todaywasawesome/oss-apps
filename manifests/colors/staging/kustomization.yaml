@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../base
+patches:
+- staging.yaml
+
+patchesStrategicMerge:
+- |-
+  apiVersion: argoproj.io/v1alpha1
+  kind: Rollout
+  metadata:
+    name: simple-rollout
+  spec:
+    template:
+      spec:
+        containers:
+        - name: webserver-simple
+          image: docker.io/todaywasawesome/colors:latest

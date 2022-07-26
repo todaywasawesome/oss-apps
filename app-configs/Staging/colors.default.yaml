@@ -6,7 +6,7 @@ spec:
   project: default
   source:
     path: manifests/colors/staging
-    repoURL: https://github.com/todaywasawesome/oss-apps
+    repoURL: 'https://github.com/todaywasawesome/oss-apps.git'
     targetRevision: HEAD
   destination:
     name: oss-staging
