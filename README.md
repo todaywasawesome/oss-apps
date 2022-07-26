@@ -4,6 +4,7 @@ This is a GitOps repo that acts as the source of truth for the open source team 
 
 # Directory Structure
 
+```bash
 ├── README.md
 ├── app-configs
 │   ├── Production
@@ -15,3 +16,4 @@ This is a GitOps repo that acts as the source of truth for the open source team 
         ├── base
         ├── production
         └── staging
+```
