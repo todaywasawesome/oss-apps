@@ -5,7 +5,7 @@ metadata:
 spec:
   project: default
   source:
-    path: manifests/colors/staging
+    path: manifests/colors/production
     repoURL: 'https://github.com/todaywasawesome/oss-apps.git'
     targetRevision: HEAD
   destination:

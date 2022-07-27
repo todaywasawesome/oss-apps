@@ -16,4 +16,4 @@ patchesStrategicMerge:
       spec:
         containers:
         - name: webserver-simple
-          image: docker.io/todaywasawesome/colors:latest
+          image: docker.io/todaywasawesome/colors:yellow
