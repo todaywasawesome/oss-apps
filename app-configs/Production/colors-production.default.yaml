@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: colors-production-1
+  name: colors-production-2
 spec:
   project: default
   source:
