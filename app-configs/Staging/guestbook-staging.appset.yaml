@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: guestbook
+spec:
+  generators:
+  - list:
+      elements:
+      - cluster: prod
+        name: oss-staging
+  template:
+    metadata:
+      name: '{{cluster}}-guestbook'
+    spec:
+      project: default
+      destination:
+        name: '{{name}}'
+        namespace: '{{cluster}}-guestbook'
+      source:
+        repoURL: https://github.com/argoproj/argo-cd.git
+        targetRevision: HEAD
+        path: applicationset/examples/list-generator/guestbook/engineering-prod
+      syncPolicy: 
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+          - CreateNamespace=true
+          - PruneLast=false
+          - Validate=true

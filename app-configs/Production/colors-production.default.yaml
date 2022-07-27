@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: colors
+  name: colors-production
 spec:
   project: default
   source:
@@ -9,7 +9,7 @@ spec:
     repoURL: 'https://github.com/todaywasawesome/oss-apps.git'
     targetRevision: HEAD
   destination:
-    name: oss-staging
+    name: oss-prod
     namespace: colors
   syncPolicy:
     automated:
