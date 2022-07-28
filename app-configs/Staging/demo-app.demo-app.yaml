@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo-app-staging-5
+  name: autopilotdemo-app-staging
 spec:
   project: default
   source:
