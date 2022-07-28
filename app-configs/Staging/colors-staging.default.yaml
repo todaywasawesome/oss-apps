@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: color-code-staging
+  name: colors-staging-4a13
 spec:
   project: default
   source:
