@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: guestbookings-staging
+  name: guestbook-staging-4a13
 spec:
   generators:
   - list:
