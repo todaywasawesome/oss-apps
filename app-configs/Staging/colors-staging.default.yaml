@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: colors-staging-4a13
+  name: colors-staging-howdy
 spec:
   project: default
   source:
