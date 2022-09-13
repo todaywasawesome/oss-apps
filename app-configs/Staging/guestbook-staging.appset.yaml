@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: guestbook-staging-howdy
+  name: guestbook-staging-91322
 spec:
   generators:
   - list:

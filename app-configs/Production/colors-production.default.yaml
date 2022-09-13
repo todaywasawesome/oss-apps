@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: colors-prod-howdy
+  name: colors-prod-91322
 spec:
   project: default
   source:
