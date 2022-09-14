@@ -16,4 +16,4 @@ patchesStrategicMerge:
       spec:
         containers:
         - name: webserver-simple
-          image: todaywasawesome/colors:purple
+          image: todaywasawesome/colors:blue #Available releases are blue, purple, yellow
