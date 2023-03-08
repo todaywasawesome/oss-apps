@@ -16,4 +16,4 @@ patchesStrategicMerge:
       spec:
         containers:
         - name: webserver-simple
-          image: todaywasawesome/colors:purple #yellow, blue, or purple
+          image: todaywasawesome/colors:v1.0.0-secure #yellow, blue, or purple
